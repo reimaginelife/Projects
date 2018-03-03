@@ -5,30 +5,50 @@
     <title></title>
   </head>
   <body>
-      <!--Had trouble figuring out the font face, so I decided to utilize TinyPic.com to host a screenshot of the logo.-->
-<div align="right" style="">
-      <a href="https://rebeccaatwood.com/"><img src="http://oi67.tinypic.com/345etk0.jpg" height="50" align="left"></a></h1>
-
-      <!--I initially utilized <ul> and <li> for each element, however it gave bullet points and I couldn't keep the
-    links all in one line, thus I just treated them like words in a sentence, but hyperlinked. -->
-      <a href="/shop">Shop</a> &nbsp;
-      <a href="/pages/about_us">About</a>&nbsp;
-      <a href="/pages/process">Process</a>&nbsp;
-      <a href="/pages/blog">Blog</a>&nbsp;
-      <a href="/pages/book">Book</a>&nbsp;
-      <a href="/pages/trade">Trade</a>&nbsp;
-      <a href="/pages/contact">Contact</a>&nbsp;
-      <a href="/cart">Bag</a>
-      <!--There was a lot to the website's elements that I did not fully understand, such as how it utilized <ul> without
-    indentation, spacing between the links, how the menu condensed into a 'Three Line' icon when the window is smaller,
-  and other more Javascript/CSS based coding.
-
-I did, however, understand the fundamentals such as anchors, div, span, and such. Also, I looked up how to create more space
-in between the navigation links so they don't look too bunched up together in one line.
-
-The anchor references were additional pages to the site, so I just linked them as such instead of copying and pasting each
-individual link for each page.-->
-    </div>
-      </h1>
+    <div class="nav--desktop">
+      <div class="mobile-wrapper">
+        <div class="header-cart__wrapper hidden-lg"> ==$0
+          <a href="/cart" class="CartToggle header-cart">
+            <i class="icon icon-ra_bag">
+              ::before
+            </i>
+          </a>
+          <span class="header-cart__bubble cartCount has-items cartCount-updater hidden-count">0</span>
+        </div>
+          <div class="logo-wrapper">
+            <h1 class="h4 header-logo" itemscope itemtype="http://schema.org/Organization">
+              <a href="/" itemprop="url">
+                <i class="icon icon-ra_primary-logo">
+                  ::before
+                </i>
+              </a>
+            </h1>
+          <a href class="menuToggle header-hamburger"></a>
+        </div>
+      <div class="header-menu nav-wrapper">
+          <ul class="main-menu accesibleNav">
+            <li class="grandparent kids-4">
+              <a href="#" class="nav-link" id="Shop">Shop</a>
+            </li>
+            <li class ="child kids-0">
+              <a href="/pages/about-us" class="nav-link" id="About">About</a></li>
+            <li class ="child kids-0">
+              <a href="/pages/process" class="nav-link" id="Process">Process</a></li>
+            <li class ="child kids-0">
+              <a href="/pages/from-the-studio" class="nav-link" id="Blog">Blog</a></li>
+            <li class ="child kids-0">
+              <a href="/pages/book" class="nav-link" id="Book">Book</a></li>
+            <li class ="child kids-0">
+              <a href="/pages/trade" class="nav-link" id="Trade">Trade</a></li>
+            <li class ="child kids-0">
+              <a href="/pages/contact" class="nav-link" id="Contact">Contact</a></li>
+            <li class="cart-text-link">
+              <a href="/cart" class="CartToggle">"Bag"
+              <span class=" hidden-count " id="nav-cartCountDesktop">(0)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>    
   </body>
 </html>
