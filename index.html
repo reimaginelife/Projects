@@ -7,15 +7,19 @@
   <body>
     <div class="nav--desktop">
       <div class="mobile-wrapper">
+<!-- I wasn't sure what the '==$0' 'tags are for but I included them -->
         <div class="header-cart__wrapper hidden-lg"> ==$0
           <a href="/cart" class="CartToggle header-cart">
+<!-- Though I'm not sure what `i class` is for, I think this is calling an icon for the cart on the page-->
             <i class="icon icon-ra_bag">
               ::before
             </i>
           </a>
           <span class="header-cart__bubble cartCount has-items cartCount-updater hidden-count">0</span>
         </div>
+<!---Based on the class name, I believe this is to control the space around the logo and its position-->
           <div class="logo-wrapper">
+<!--My guess is that itemscope has to do with sourcing some sort of style or media to be utilized on the web-->
             <h1 class="h4 header-logo" itemscope itemtype="http://schema.org/Organization">
               <a href="/" itemprop="url">
                 <i class="icon icon-ra_primary-logo">
@@ -23,9 +27,11 @@
                 </i>
               </a>
             </h1>
+<!--I believe this is where the navigation beings-->
           <a href class="menuToggle header-hamburger"></a>
         </div>
       <div class="header-menu nav-wrapper">
+<!--I love the organization and simplicity in which one can read the html here-->
           <ul class="main-menu accesibleNav">
             <li class="grandparent kids-4">
               <a href="#" class="nav-link" id="Shop">Shop</a>
@@ -49,6 +55,6 @@
           </ul>
         </div>
       </div>
-    </div>    
+    </div>
   </body>
 </html>
